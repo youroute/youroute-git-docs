@@ -1,0 +1,25 @@
+[user]
+	name = %username%
+	email = %email%
+[github]
+	user = %github_username%
+	token = %github_token%
+[core]
+	excludesfile = /Users/%username%/.gitignore_global
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path =
+[color]
+	ui = true
+[alias]
+	a = add --all -v
+	st = status
+	ci = commit
+	br = branch
+	co = checkout
+	df = diff
+	lg = log -p
+	lc = "log ORIG_HEAD.. --stat --no-merges"
+	looog = "log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%Creset' --abbrev-commit -- ate=relative"
+	up = "pull --rebase --stat"
+	edit-unmerged = '!f() { git ls-files --unmerged | cut -f2 | sort -u ; }; subl `f`'
