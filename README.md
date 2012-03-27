@@ -13,7 +13,7 @@
 
     git config --global color.ui true
 
-И добавим несколько полезных алиасов. Руководство в дальнейшем подразумевает, что ни у вас прописаны.
+И добавим несколько полезных алиасов. Руководство в дальнейшем подразумевает, что они у вас прописаны.
 
     git config --global alias.a add --all -v
     git config --global alias.st status
@@ -23,7 +23,7 @@
     git config --global alias.df diff
     git config --global alias.lg log -p
     git config --global alias.lc "log ORIG_HEAD.. --stat --no-merges"
-    git config --global alias.looog "log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%Creset' --abbrev-commit -- ate=relative"
+    looog = "log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%Creset%Cred[%an]%Creset' --abbrev-commit --date=relative"
     git config --global alias.up "pull --rebase --stat"
     git config --global alias.edit-unmerged '!f() { git ls-files --unmerged | cut -f2 | sort -u ; }; subl `f`'
 
