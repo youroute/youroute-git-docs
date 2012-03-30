@@ -113,3 +113,7 @@
   Удаляет файл из репозитория, но оставляет его на диске.
 12. `git co --track origin/branchname`
   Эта команда создаст у вас в репозитории ветку branchname и слинкует ее с аналогичной веткой в origin. Теперь вместе с git pull будет происходить не только синхронизация origin/master -> master, но и origin/branchname -> branchname
+13. `git push origin :branchname`
+  Если вам нужно уничтожить ветку в удаленном репозитории, то это самый годный способ
+14. `git branch -d branchname`
+  А если в локальном, то так
