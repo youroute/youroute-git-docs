@@ -25,7 +25,7 @@
     git config --global alias.lc "log ORIG_HEAD.. --stat --no-merges"
     looog = "log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%Creset%Cred[%an]%Creset' --abbrev-commit --date=relative"
     git config --global alias.up "pull --rebase --stat"
-    git config --global alias.edit-unmerged '!f() { git ls-files --unmerged | cut -f2 | sort -u ; }; subl `f`'
+    git config --global alias.edit-unmerged "!f() { git ls-files --unmerged | cut -f2 | sort -u ; }; subl `f`"
 
 Для удобства можете скачать конфигурационный файл .gitconfig
 
